@@ -11776,7 +11776,7 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Who-are-you-and-where-do-you-come-from?">Who are you and where do you come from?<a class="anchor-link" href="#Who-are-you-and-where-do-you-come-from?">&#182;</a></h1><p>How often do you find yourself wondering, "where in the world has this protist sequence been found before?"</p>
-<p>I do all the time. Most recently I wanted to know if sequences we found to be enriched in samples from hydrothermal vents near Okinawa had previously been found in other marine ecosystems and especially at other vent sites (read more: <a href="https://www.biorxiv.org/content/10.1101/714816v2">https://www.biorxiv.org/content/10.1101/714816v2</a>).</p>
+<p>I do all the time. Most recently, I wanted to know if sequences we found to be enriched in samples from hydrothermal vents near Okinawa had previously been found in other marine ecosystems and especially at other vent sites (read more: <a href="https://www.biorxiv.org/content/10.1101/714816v2">https://www.biorxiv.org/content/10.1101/714816v2</a>).</p>
 <p>With about 40 sequences to look into, we set about blasting the sequences and manually looking at results and the publications linked to hits. It was painfully clear, however, that this approach was not sustainable, reproducible, or anywhere close to 'best practices'.</p>
 <p>Hence, the idea for this post was born.</p>
 <p>The Protist Ribosomal Reference (PR2) database (<a href="https://github.com/pr2database/pr2database">https://github.com/pr2database/pr2database</a>) is already an amazing resource for those of us excited about protists. PR2 includes 176,813 protist ribosomal RNA gene sequences that can be downloaded for use in classifiying sequences denoised with DADA2 or processed with other software (<a href="https://github.com/pr2database/pr2database/releases">https://github.com/pr2database/pr2database/releases</a>). In addition, metadata for sequences in the database, including taxonomy, publications, and collection location, are available. The PR2 tutorial even gives an example of plotting sequence collection location on a map in R (<a href="https://github.com/pr2database/pr2database/blob/master/PR2_R_database.md">https://github.com/pr2database/pr2database/blob/master/PR2_R_database.md</a>).</p>
@@ -11841,10 +11841,10 @@ div#notebook {
 
 
 
-<div id="d9eee7a1-4e09-4f9f-8ea6-914c93660f6f"></div>
+<div id="6c517d9c-6b61-454c-8a0a-767b3ae88cef"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#d9eee7a1-4e09-4f9f-8ea6-914c93660f6f');
+var element = $('#6c517d9c-6b61-454c-8a0a-767b3ae88cef');
 (function(root) {
   function embed_document(root) {
     
@@ -12056,8 +12056,8 @@ var element = $('#d9eee7a1-4e09-4f9f-8ea6-914c93660f6f');
 <p>Read in the PR2 database metadata as pandas dataframe and select the columns of interest:<br>
 Get the database metadate with:<br></p>
 
-<pre><code>wget https://github.com/pr2database/pr2database/releases/download/4.11.1/pr2_version_4.11.1_merged.tsv.gz</code></pre>
-<p>and unzip with <code>gunzip pr2_version_4.11.1_merged.tsv.gz</code></p>
+<pre><code>!wget https://github.com/pr2database/pr2database/releases/download/4.11.1/pr2_version_4.11.1_merged.tsv.gz</code></pre>
+<p>and unzip with <code>!gunzip pr2_version_4.11.1_merged.tsv.gz</code></p>
 
 </div>
 </div>
@@ -12215,7 +12215,7 @@ Get the database metadate with:<br></p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Use fuzzy matching to get locations from <code>gb_isolation_source</code>.</p>
+<p>Use fuzzy matching to get locations from <code>gb_isolation_source</code>:</p>
 
 </div>
 </div>
@@ -12291,7 +12291,7 @@ Get the database metadate with:<br></p>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>To use google maps, you need a google API key. <br>
-So uf you are going to use this code, you'll have to request your own API key and then insert it into the plotting code cell.<br>
+So if you are going to use this code, you'll have to request your own API key and then insert it into the plotting code cell.<br>
 The folllowing video makes it very clear how to acquire the right type of google API key:<br>
 <a href="https://www.youtube.com/watch?v=9ImLCQBj9SE">https://www.youtube.com/watch?v=9ImLCQBj9SE</a></p>
 <p><strong>And plot!</strong></p>
@@ -12381,10 +12381,10 @@ The folllowing video makes it very clear how to acquire the right type of google
 
 
 
-<div id="3f1d5189-3231-4ed7-a048-7f09f6339d29"></div>
+<div id="b59a07f6-db7a-4c1f-82f9-a6d172a35e53"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#3f1d5189-3231-4ed7-a048-7f09f6339d29');
+var element = $('#b59a07f6-db7a-4c1f-82f9-a6d172a35e53');
 
 (function(root) {
   function now() {
@@ -12707,10 +12707,10 @@ var element = $('#3f1d5189-3231-4ed7-a048-7f09f6339d29');
 
 
 
-<div id="d31003bd-ee28-4e2a-be0f-8e22921ce5b9"></div>
+<div id="87f0e90a-09c6-443b-b2fb-70035ae43d66"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#d31003bd-ee28-4e2a-be0f-8e22921ce5b9');
+var element = $('#87f0e90a-09c6-443b-b2fb-70035ae43d66');
 (function(root) {
   function embed_document(root) {
     
